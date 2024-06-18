@@ -1,0 +1,32 @@
+@import "variables.less";
+
+.products {
+    margin-top: @products-margin-top;
+    display: grid;
+    grid-template-columns: repeat(3, 32.66%);
+    column-gap: 1%;
+    row-gap: 4%;
+    width: 100%;
+
+    .product-item {
+        img {
+            width: 100%;
+            border-radius: @product-img-border-radius;
+        }
+    }
+}
+
+.product-button {
+    display: block;
+    background-color: @product-button-bg-color;
+    color: @white;
+    text-align: center;
+    padding: @product-button-padding 0;
+    border-radius: @product-button-border-radius;
+    margin-top: @product-button-margin-top;
+    text-decoration: none;
+
+    &:hover {
+        background-color: @product-button-hover-bg-color;
+    }
+}
